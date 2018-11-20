@@ -1,0 +1,31 @@
+{
+  "name": "@idn/util-peer",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "mocha --reporter spec",
+    "prepublish": "tsc",
+    "dopublish": "git add . ; git commit -m'bump version' ; git push origin master ; npm publish --access=public"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chainintel/idn-util-peer.git"
+  },
+  "homepage": "https://github.com/chainintel/idn-util-peer#readme",
+  "url": "https://github.com/chainintel/idn-util-peer/issues",
+  "email": "support@chainintel.com",
+  "devDependencies": {
+    "@types/node": "^10.12.6"
+  },
+  "dependencies": {
+    "is-typedarray": "^1.0.0",
+    "multiaddr": "^5.0.2",
+    "peer-info": "^0.14.1"
+  }
+}
